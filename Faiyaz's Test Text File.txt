@@ -1,4 +1,4 @@
-© 2000-2018 QIAGEN. All rights reserved.												
+Â© 2000-2018 QIAGEN. All rights reserved.												
 Symbol	Entrez Gene Name	Illumina	Expr Log Ratio	Expr p-value	Expected	Location	Type(s)	Biomarker Application(s)	Drug(s)	Entrez Gene ID for Human	Entrez Gene ID for Mouse	Entrez Gene ID for Rat
 CAT	catalase	ILMN_1369530	0.42	0.0347	Up	Cytoplasm	enzyme	diagnosis	fomepizole	847	12359	24248
 DNAJB4	DnaJ heat shock protein family (Hsp40) member B4	ILMN_1371000	0.358	0.00719	 	Nucleus	other	 	 	11080	67035	295549
