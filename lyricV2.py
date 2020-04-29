@@ -16,8 +16,12 @@ def youtube_url(i):
     query_string = urllib.parse.urlencode({"search_query" : lyricinfo[i]['Song'].title()})
     html_content = urllib.request.urlopen("http://www.youtube.com/results?" + query_string)
     search_results = re.findall(r'href=\"\/watch\?v=(.{11})', html_content.read().decode())
-    youtube_url_searched = "http://www.youtube.com/watch?v=" + search_results[0]
-    print("You can listen to this song by using this url: "+youtube_url_searched)
+    if True:
+        try:
+            youtube_url_searched = "http://www.youtube.com/watch?v=" + search_results[0]
+            print("You can listen to this song by using this url: "+youtube_url_searched)
+        except ValueError:
+            print("Something went wrong when searching for the url. Sorry!")
 # This is for searching the url of "i", which is the song position in the list.
 
 class color:
