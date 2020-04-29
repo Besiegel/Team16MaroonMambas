@@ -20,7 +20,7 @@ def youtube_url(i):
         try:
             youtube_url_searched = "http://www.youtube.com/watch?v=" + search_results[0]
             print("You can listen to this song by using this url: "+color.UNDERLINE+youtube_url_searched+color.END)
-        except ValueError:
+        except IndexError:
             print("Something went wrong when searching for the url. Sorry!")
 # This is for searching the url of "i", which is the song position in the list.
 
