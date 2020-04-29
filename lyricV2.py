@@ -107,7 +107,7 @@ def lyric_locate_beta():
         if length_words <= max_list_len and length_words > 0:
             n = 1
             for i in song_pos_words:
-                print(str(n)+". "+color.BOLD+lyricinfo[i]['Song'].title()+color.END+" performed by "+lyricinfo[i]['Artist'].title()+", which was ranked #"+lyricinfo[i]['Rank']+" in "+lyricinfo[i]['Year']+ " on the Billboard Hot 100.")
+                print(color.RED+str(n)+". "+color.END+color.BOLD+lyricinfo[i]['Song'].title()+color.END+" performed by "+lyricinfo[i]['Artist'].title()+", which was ranked #"+lyricinfo[i]['Rank']+" in "+lyricinfo[i]['Year']+ " on the Billboard Hot 100.")
                 n += 1
                 youtube_url(i)
         if length_words == 0:
