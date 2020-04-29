@@ -19,7 +19,7 @@ def youtube_url(i):
     if True:
         try:
             youtube_url_searched = "http://www.youtube.com/watch?v=" + search_results[0]
-            print("You can listen to this song by using this url: "+youtube_url_searched)
+            print("You can listen to this song by using this url: "+color.UNDERLINE+youtube_url_searched+color.END)
         except ValueError:
             print("Something went wrong when searching for the url. Sorry!")
 # This is for searching the url of "i", which is the song position in the list.
@@ -57,7 +57,7 @@ def lyric_locate_beta():
         if lyric_phrase != "" and len(song_pos_phrase) <= max_list_len:
             n = 1
             for i in song_pos_phrase:
-                print(str(n)+". "+color.BOLD+lyricinfo[i]['Song'].title()+color.END+" performed by "+lyricinfo[i]['Artist'].title()+", which was ranked #"+lyricinfo[i]['Rank']+" in "+lyricinfo[i]['Year']+ " on the Billboard Hot 100.")
+                print(color.RED+str(n)+". "+color.END+color.BOLD+lyricinfo[i]['Song'].title()+color.END+" performed by "+lyricinfo[i]['Artist'].title()+", which was ranked #"+lyricinfo[i]['Rank']+" in "+lyricinfo[i]['Year']+ " on the Billboard Hot 100.")
                 n += 1
                 youtube_url(i)
         if len(song_pos_phrase) == 0:
